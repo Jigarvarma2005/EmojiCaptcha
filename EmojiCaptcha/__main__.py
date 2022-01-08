@@ -16,8 +16,9 @@ try:
 except OSError:
     pass
 
+
 class Captcha:
-    def __init__(self, file_name=None, background=None):
+    def __init__(self, file_name: str = None, background: str = None):
         """
         Optional **args
 
@@ -33,9 +34,8 @@ class Captcha:
         self.file_name = file_name if file_name else str(uuid.uuid4().hex)
         self.background = background if background else os.path.join(DATA_DIR, 'background.png')
 
-
-    def generate(self) -> dict():
-        "Main function to Generate Captcha"
+    def generate(self) -> dict:
+        """Main function to Generate Captcha"""
         try:
             background = Image.open(self.background)
             paste_image_list = list()
