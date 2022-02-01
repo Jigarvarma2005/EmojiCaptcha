@@ -7,14 +7,17 @@ except ImportError:
     from distutils.core import setup, find_packages
 
 import sys
-import EmojiCaptcha
 from email.utils import parseaddr
 
 kwargs = {}
 if not hasattr(sys, 'pypy_version_info'):
     kwargs['install_requires'] = ['Pillow']
 
-author, author_email = parseaddr(EmojiCaptcha.__author__)
+__version__ = '1.1'
+__author__ = 'Jigar Varma <Jigarverma2002@gmail.com>'
+__homepage__ = 'https://github.com/Jigarvarma2005/EmojiCaptcha'
+    
+author, author_email = parseaddr(__author__)
 
 with open("requirements.txt", encoding="utf-8") as r:
     requires = [i.strip() for i in r]
@@ -24,10 +27,10 @@ with open("README.md", encoding="utf-8") as f:
 
 setup(
     name='EmojiCaptcha',
-    version=EmojiCaptcha.__version__,
+    version=__version__,
     author=author,
     author_email=author_email,
-    url=EmojiCaptcha.__homepage__,
+    url=__homepage__,
     packages=find_packages(),
     description='A python3 library that generates Emoji CAPTCHAs.',
     long_description=readme,
@@ -52,8 +55,8 @@ setup(
     ],
     keywords="telegram emoji library python captcha api",
     project_urls={
-        "Tracker": f"{EmojiCaptcha.__homepage__}/issues",
-        "Source": EmojiCaptcha.__homepage__,
+        "Tracker": f"{__homepage__}/issues",
+        "Source": __homepage__,
     },
     python_requires="~=3.6",
     install_requires=requires
