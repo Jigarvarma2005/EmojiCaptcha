@@ -55,8 +55,8 @@ setup(
     ],
     keywords="telegram emoji library python captcha api",
     project_urls={
-        "Tracker": f"{EmojiCaptcha.__homepage__}/issues",
-        "Source": EmojiCaptcha.__homepage__,
+        "Tracker": f"{__homepage__}/issues",
+        "Source": __homepage__,
     },
     python_requires="~=3.6",
     install_requires=requires
