@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-__version__ = '1.0'
+__version__ = '1.1'
 __author__ = 'Jigar Varma <Jigarverma2002@gmail.com>'
 __homepage__ = 'https://github.com/Jigarvarma2005/EmojiCaptcha'
 
