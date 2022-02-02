@@ -1,1 +1,1 @@
-recursive-include EmojiCaptcha *.png
+recursive-include EmojiCaptcha *.png *.txt

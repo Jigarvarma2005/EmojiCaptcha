@@ -13,7 +13,7 @@ kwargs = {}
 if not hasattr(sys, 'pypy_version_info'):
     kwargs['install_requires'] = ['Pillow']
 
-__version__ = '1.1'
+__version__ = '0.1.1'
 __author__ = 'Jigar Varma <Jigarverma2002@gmail.com>'
 __homepage__ = 'https://github.com/Jigarvarma2005/EmojiCaptcha'
     
