@@ -3,10 +3,10 @@
 # Installation
 ------------
 
-Install EmojiCaptcha with pip::
-
-    $ pip install EmojiCaptcha
-
+Install EmojiCaptcha with pip
+``` bash
+pip install EmojiCaptcha
+```
 # Usage
 ------------
 
