@@ -1,1 +1,2 @@
 recursive-include EmojiCaptcha *.png *.txt
+include README.md LICENSE requirements.txt

@@ -3,7 +3,7 @@
 # Installation
 ------------
 
-Install captcha with pip::
+Install EmojiCaptcha with pip::
 
     $ pip install EmojiCaptcha
 
